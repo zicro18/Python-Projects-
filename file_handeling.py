@@ -17,14 +17,11 @@ print(today)
 def user_data():
     name = input("Enter your name: ")
     task_name = input("enter task name: ")
-    n = int(input("enter number of tasks for the day: "))
-    for i in range(n):
-        task = input("Enter the task of the day: ")
+    task = input("Enter the task of the day: ")
 
     print("Wecome", name)
     print(f"Your tasks for {task_name} are: ")
-    for i in range(n):
-        print("#" , task)
+    print("#" , task)
 
 # Giving choice for save or edit the file
 
@@ -46,8 +43,6 @@ def user_data():
         elif (choice=='e' or choice=="E"):
             name = input("Edit your name: ")
             task_name = input("Edit your task name: ")
-            n = input("Edit task number: ")
-        for i in range(n):
             task = input("Edit task: ")
 
             with open(task_name + ".txt", "a" ) as f:
